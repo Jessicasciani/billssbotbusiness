@@ -3,9 +3,9 @@
     <%= image_tag "newlogobillss.png", class: "logo-home" %>
     <div class="flex-home">
       <div style="z-index: 45;width: 60vw;">
-        <h1 class="h1-home" style="">Brighten up your <strong>customers</strong> experience</h1>
+        <h1 class="h1-home" style="">Bring <strong>life</strong> to banking</h1>
         <h2 class="h2-home">White label AI-powered <strong>robot advisor</strong> for <strong>bill payment</strong> and <strong>spending analytics</strong></h2>
-        <p class="btn-purple"><%= link_to "Enquire", root_path %></p>
+        <a href="#contact"><p class="btn-purple">Get in touch</p></a>
       </div>
       <%= image_tag "visualfrontpage.png", class: "visualfrontpage" %>
     </div>
@@ -16,10 +16,15 @@
 
   <div class="container">
 
-     <div style="margin: 15vh 0;">
+     <div style="margin: 10vh 0;">
       <p class="gros-titre-full" id="custom">Be the bank that <span>understands </span> what<span> customers want</span></p>
-      <p class="text-center" style="font-size: 1.4rem;margin: 0 12vw;">We help you leverage <strong>data</strong> to better serve your customers and provide them <strong>tailored offers</strong>.</p>
-      <p class="text-center" style="font-size: 1.4rem;margin: 0 12vw;">Our solution provide measurable ROI and create long-term profitable relationships.</p>
+      <div class="flex-point">
+        <hr class="carre-dot"><p style="font-size: 1.4rem;">We help you leverage <strong>data</strong> to better serve your customers and provide them <strong>tailored offers</strong>.</p>
+      </div>
+      <br>
+      <div class="flex-point">
+        <hr class="carre-dot"><p style="font-size: 1.4rem;">Our solution provide measurable ROI and create long-term profitable relationships.</p>
+      </div>
       <hr class="purple-hr">
     </div>
 
@@ -29,7 +34,7 @@
       data-aos-duration="1000">
       <div class="mr">
         <p class="gros-titre">Make <span>banking</span> part of your customers <span>lifestyle</span></p>
-        <p class="petit-titre">Billss analyse your customers spending, helps them set saving targets and stay on budget.
+        <p class="petit-titre">Our <strong>robot advisor</strong> analyse your customers spending, helps them set saving targets and stay on budget.
         Help your customers make smarter day-to-day decisions about their money, not just hold it.</p>
       </div>
       <%= image_tag "phoneanalytics.png", class: "img-carre-right" %>
@@ -70,7 +75,7 @@
 </div>
 
   <div class="form-home" style="background-image: url(<%= image_path "background-purple.jpg" %>);">
-    <div class="contact-us">
+    <div class="contact-us" id="contact">
       <p style="color: white; font-size: 2.2rem; font-weight: bold;">Contact Us</p>
       <p style="color: white;">We would be happy to discuss further what our robot-advisor can do for you and your customers</p>
     </div>
@@ -94,7 +99,38 @@
   </div>
   <div class="footer-landing">
     <div class="footer-pages-links-landing">
-      <p>Newlsetter input</p>
+
+
+<!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+    <form action="https://billss.us18.list-manage.com/subscribe/post?u=e64621dc7b77cc6947430b1cc&amp;id=5154dd7c61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+      <p class="footer-copyright" style="margin-bottom:1vh;">Subscribe to our mailing list</p>
+
+      <div class="flex">
+        <div class="mc-field-group">
+          <input type="email" value="Email address" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <!-- <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div> -->    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e64621dc7b77cc6947430b1cc_5154dd7c61" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="➡️" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+      </div>
+    </form>
+    </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+
    <!--    <p><%#= link_to "About", root_path %></p>
       <p><%#= link_to "Become a partner", root_path %></p> -->
       <p><%#= link_to "Terms and conditions", terms_and_conditions_path %></p>
