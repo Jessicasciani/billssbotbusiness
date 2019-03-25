@@ -38,6 +38,14 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    input {
+      width: 15vw;
+      border: 1px solid rgb(220,220,220);
+    }
+    textarea {
+      width: 15vw;
+      border: 1px solid rgb(220,220,220);
+    }
   }
   background-color: white;
   box-shadow: 1px 1px 1px 1px rgb(230,230,230);
