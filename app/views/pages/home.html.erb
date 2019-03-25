@@ -1,2 +1,108 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="hidden-xs hidden-sm">
+  <div class="home">
+    <%= image_tag "newlogobillss.png", class: "logo-home" %>
+    <div class="flex-home">
+      <div style="z-index: 45;width: 60vw;">
+        <h1 class="h1-home" style="">Brighten up your <strong>customers</strong> experience</h1>
+        <h2 class="h2-home">White label AI-powered <strong>robot advisor</strong> for <strong>bill payment</strong> and <strong>spending analytics</strong></h2>
+        <p class="btn-purple"><%= link_to "Enquire", root_path %></p>
+      </div>
+      <%= image_tag "visualfrontpage.png", class: "visualfrontpage" %>
+    </div>
+    <div class="arrow bounce">
+      <a class="fa-2x" href="#custom"><i class="fas fa-angle-down"></i></a>
+    </div>
+  </div>
+
+  <div class="container">
+
+     <div style="margin: 15vh 0;">
+      <p class="gros-titre-full" id="custom">Be the bank that <span>understands </span> what<span> customers want</span></p>
+      <p class="text-center" style="font-size: 1.4rem;margin: 0 12vw;">We help you leverage <strong>data</strong> to better serve your customers and provide them <strong>tailored offers</strong>.</p>
+      <hr class="purple-hr">
+    </div>
+
+    <div class="flex section">
+      <div class="mr">
+        <p class="gros-titre">Make <span>banking</span> part of your customers <span>lifestyle</span></p>
+        <p class="petit-titre">Billss analyse your customers spending, helps them set saving targets and stay on budget.
+        Be the bank where consumers can manage their money, not just hold it.</p>
+      </div>
+      <%= image_tag "phoneanalytics.png", class: "img-carre-right" %>
+    </div>
+  <!-- <h3 class="title-home" >For your customers</h3>
+   -->
+    <div class="flex section">
+      <%= image_tag "left-carre.png", class: "img-carre" %>
+      <div class="ml">
+        <p class="gros-titre">One-stop <span>bill payment</span> tool that makes your customers life <span>easy</span></p>
+        <p class="petit-titre">Billss chatbot handles the whole bill payment process seamlessly. Your customers receive a notification when a bill is issued and can pay it in a click.</p>
+      </div>
+    </div>
+
+
+  <!--   <h3 class="title-home">For you</h3>
+   -->
+    <!-- <div class="flex section">
+      <div class="mr">
+        <p class="gros-titre"><span>Data</span> analysis for banks</p>
+        <p class="petit-titre">Our chatbot offers bill payment in a click, instant notifications and reminders. A seemless experience blablabla. </p>
+      </div>
+      <%= image_tag "chartbar.png", class: "img-bot" %>
+    </div>
+   -->
+   <div style="margin: 15vh 0;">
+    <h3 class="title-home">Our partners</h3>
+    <div class="flex">
+      <%= image_tag "sbclogo.png", class: "logo-home" %>
+      <%= image_tag "visa.png", class: "logo-home" %>
+      <%= image_tag "hsbc.png", class: "logo-home" %>
+      <%= image_tag "mashreq.png", class: "logo-home" %>
+    </div>
+  </div>
+</div>
+
+  <div class="form-home" style="background-image: url(<%= image_path "background-purple.jpg" %>);">
+    <div class="contact-us">
+      <p style="color: white; font-size: 2.2rem; font-weight: bold;">Contact Us</p>
+      <p style="color: white;">We would be happy to discuss further what our robot-advisor can do for you and your customers</p>
+    </div>
+    <div class="form-box">
+      <form action="https://formspree.io/hello@billss.co" method="POST" style="text-align: center;">
+        <div class="label-design">
+          <label for="Name">Name</label>
+          <input type="text" name="name">
+        </div>
+        <div class="label-design">
+          <label for="Email">Email</label>
+          <input type="email" name="_replyto">
+        </div>
+        <div class="label-design">
+          <label for="Message">Message</label>
+          <textarea type="text" name="message"></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn-purple">
+      </form>
+    </div>
+  </div>
+  <div class="footer-landing">
+    <div class="footer-pages-links-landing">
+      <p>Newlsetter input</p>
+   <!--    <p><%#= link_to "About", root_path %></p>
+      <p><%#= link_to "Become a partner", root_path %></p> -->
+      <p><%#= link_to "Terms and conditions", terms_and_conditions_path %></p>
+    </div>
+
+    <div class="footer-copyright">
+      Copyright © 2018 Billss, All rights reserved.
+    </div>
+    <div class="footer-links-landing">
+      <a href="https://www.facebook.com/billssuk/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/BillssUK" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/billssUK/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/billss/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+

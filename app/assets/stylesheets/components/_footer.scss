@@ -1,0 +1,106 @@
+.footer {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 159px;
+  padding: 0px 50px;
+  color: #433754;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.footer-links a {
+  color: #433754;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+  &:hover {
+    color: $purple;
+  }
+}
+.footer .fa-heart {
+  color: #000D47;
+}
+
+.footer-pages-links {
+  p {
+    margin: 2px 0px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  a {
+    text-decoration: none;
+    color: #433754;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.footer-pages-links {
+}
+
+.footer-copyright {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+
+// FOOTER FOR LANDING PAGE
+
+.footer-landing {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: 0px 50px;
+  color: #404040;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links-landing {
+  a {
+    color: #404040;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.footer-landing .fa-heart {
+  color: white;
+}
+
+.footer-pages-links-landing {
+  p {
+    margin: 2px 0px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  a {
+    text-decoration: none;
+    color: #404040;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.footer-pages-links {
+}
+
+.footer-copyright {
+  font-weight: lighter;
+  font-size: 12px;
+}
+

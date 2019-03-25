@@ -1,1 +1,262 @@
-// Specific CSS for your home-page
+.flex-home {
+  display: flex;
+  align-items: center;
+  margin-left: 8vw;
+  height: 84vh;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  margin: 10vh 0;
+  min-height: 65vh;
+}
+
+.visualfrontpage {
+  width: 44vw;
+  position: absolute;
+  right: 0;
+}
+
+.label-design {
+  display: flex;
+  flex-direction: column;
+  label {
+    text-align: left;
+  }
+}
+
+.form-box {
+  form {
+    padding: 35px 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgb(230,230,230);
+  position: absolute;
+  right: 10vw;
+  border-radius: 20px;
+  height: 52vh;
+  width: 35vw;
+  top: 50px;
+}
+
+
+.contact-us {
+  padding-top: 15vh;
+  text-align: center;
+  width: 32vw;
+  margin-left: 14vw;
+}
+
+.form-home {
+  height: 50vh;
+  margin: 15vh 0;
+  position: relative;
+}
+
+.visualfrontpage-xs {
+  width: 44vw;
+}
+
+
+.img-bot {
+  width: 25vw;
+}
+
+.img-carre {
+  width: 45vw;
+  position: absolute;
+  left: 10vw;
+}
+
+.img-carre-right {
+  width: 25vw;
+  // margin-right: 30vw;
+}
+
+.btn-purple {
+  border: none;
+  margin-top: 5vh;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: $purple;
+  padding: 10px 15px;
+  color: white;
+  width: 13vw;
+  font-weight: bold;
+  p  {
+    margin: 0;
+  }
+  a {
+    margin-bottom: 3px;
+    display: block;
+    color:white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-purple-xs {
+  margin-top: 5vh;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: $purple;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  p  {
+    margin: 0;
+  }
+  a {
+    margin-bottom: 3px;
+    display: block;
+    color:white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.logo-home {
+  margin-left: 8vw;
+  width: 100px;
+}
+
+
+.home {
+  height: 100vh;
+  padding-top: 30px;
+  background-color:white;
+}
+
+.h2-home {
+  font-size: 1.6em;
+  font-weight: 300;
+  width: 38vw;
+  line-height: 1.3em;
+  margin-top: 3vh;
+  strong {
+    font-weight: 700;
+  }
+  font-weight: 300;
+}
+
+.h2-home-xs {
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin-top: 3vh;
+  strong {
+    font-weight: 700;
+  }
+  font-weight: 300;
+}
+
+
+.h1-home {
+  font-size: 7rem;
+  line-height: 0.9em;
+  strong {
+    font-weight: 700;
+  }
+  font-weight: 300;
+}
+
+.h1-home-xs {
+  font-size: 4rem;
+  line-height: 0.9em;
+  strong {
+    font-weight: 700;
+  }
+  font-weight: 300;
+}
+
+.title-home  {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.gros-titre {
+  font-size: 2.8rem;
+  width: 35vw;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  span {
+    color: $purple;
+  }
+  // text-align: center;
+}
+
+.purple-hr {
+  border-bottom: 4px solid $purple;
+  width: 100px;
+  margin-top: 6vh;
+}
+
+.gros-titre-full {
+  font-size: 2.8rem;
+  font-weight: bold;
+  span {
+    color: $purple;
+  }
+  text-align: center;
+}
+
+.petit-titre {
+  width: 34vw;
+  font-size: 1.1rem;
+}
+
+.ml {
+  margin-left: 35vw;
+}
+
+.mr {
+  margin-right: 5vw;
+}
+
+
+.arrow {
+  text-align: center;
+  .fa {
+    color: $black;
+  }
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+a {
+  color: #444444;
+  &:hover{
+    cursor: pointer;
+  }
+}
