@@ -1,15 +1,4 @@
-.flex-home {
-  display: flex;
-  align-items: center;
-  margin-left: 8vw;
-  height: 80vh;
-}
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .section {
   margin: 10vh 0;
@@ -28,15 +17,6 @@
   right: 0;
 }
 
-.card-home {
-  width: 25vw;
-  height: 50vh;
-  object-fit: contain;
-}
-
-.cards {
-  margin: 10vh 0;
-}
 
 .label-design {
   display: flex;
@@ -44,66 +24,6 @@
   label {
     text-align: left;
   }
-}
-
-.mc-field-group {
-  input {
-    color: #383838 !important;
-    font-size: 12px !important;
-    width: 10vw !important;
-  }
-}
-
-
-#mc_embed_signup .button {
-  background-color: $purple !important;
-  margin: 0 0px 18px 0 !important;
-  font-size: 15px !important;
-  color: white;
-  &:hover {
-    background-color: $purple !important;
-  }
-}
-
-.form-box {
-  form {
-    padding: 35px 0px;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    input {
-      width: 20vw;
-      border: 1px solid rgb(220,220,220);
-    }
-    textarea {
-      width: 20vw;
-      border: 1px solid rgb(220,220,220);
-    }
-  }
-  background-color: white;
-  box-shadow: 1px 1px 1px 1px rgb(230,230,230);
-  position: absolute;
-  right: 14vw;
-  border-radius: 20px;
-  height: 52vh;
-  width: 30vw;
-  top: 50px;
-}
-
-
-.contact-us {
-  padding-top: 15vh;
-  text-align: center;
-  width: 32vw;
-  margin-left: 14vw;
-}
-
-.form-home {
-  height: 50vh;
-  margin: 15vh 0;
-  position: relative;
 }
 
 .visualfrontpage-xs {
@@ -115,62 +35,6 @@
   width: 25vw;
 }
 
-.img-carre {
-  width: 45vw;
-  position: absolute;
-  left: 10vw;
-}
-
-.img-carre-right {
-  width: 25vw;
-  // margin-right: 30vw;
-}
-
-.btn-purple {
-  border: none;
-  margin-top: 5vh;
-  font-size: 1.3rem;
-  text-align: center;
-  background-color: $purple;
-  padding: 10px 15px;
-  color: white;
-  width: 13vw;
-  font-weight: bold;
-  p  {
-    margin: 0;
-  }
-  a {
-    margin-bottom: 3px;
-    display: block;
-    color:white;
-    &:hover {
-      color: white;
-      text-decoration: none;
-    }
-  }
-}
-
-.btn-purple-xs {
-  margin-top: 5vh;
-  font-size: 1.3rem;
-  text-align: center;
-  background-color: $purple;
-  padding: 10px 15px;
-  color: white;
-  font-weight: bold;
-  p  {
-    margin: 0;
-  }
-  a {
-    margin-bottom: 3px;
-    display: block;
-    color:white;
-    &:hover {
-      color: white;
-      text-decoration: none;
-    }
-  }
-}
 
 .logo-home {
   margin-left: 8vw;
@@ -182,18 +46,6 @@
   height: 100vh;
   padding-top: 30px;
   background-color:white;
-}
-
-.h2-home {
-  font-size: 1.6em;
-  font-weight: 300;
-  width: 38vw;
-  line-height: 1.3em;
-  margin-top: 3vh;
-  strong {
-    font-weight: 700;
-  }
-  font-weight: 300;
 }
 
 .h2-home-xs {
@@ -208,41 +60,12 @@
 }
 
 
-.h1-home {
-  font-size: 10rem;
-  line-height: 0.9em;
-  strong {
-    font-weight: 700;
-  }
-  font-weight: 300;
-}
-
-.h1-home-xs {
-  font-size: 4rem;
-  line-height: 0.9em;
-  strong {
-    font-weight: 700;
-  }
-  font-weight: 300;
-}
-
 .title-home  {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 60px;
 }
 
-.gros-titre {
-  line-height: 1.3em;
-  font-size: 2.8rem;
-  width: 35vw;
-  margin-bottom: 5vh;
-  font-weight: bold;
-  span {
-    color: $purple;
-  }
-  // text-align: center;
-}
 
 .purple-hr {
   border-bottom: 4px solid $purple;
@@ -259,18 +82,6 @@
   text-align: center;
 }
 
-.petit-titre {
-  width: 34vw;
-  font-size: 1.1rem;
-}
-
-.ml {
-  margin-left: 35vw;
-}
-
-.mr {
-  margin-right: 5vw;
-}
 
 
 .arrow {
@@ -311,5 +122,39 @@ a {
   &:hover{
     cursor: pointer;
     text-decoration: none;
+  }
+}
+
+
+@media only screen and (max-width: 778px) {
+
+  .form-box-xs {
+      background-color: white;
+      box-shadow: 1px 1px 1px 1px #e6e6e6;
+      border-radius: 20px;
+      height: 52vh;
+      width: 70vw;
+      margin: auto;
+      margin-bottom: 10vh;
+
+      form {
+        padding: 35px 0px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      input {
+        width: 50vw;
+        border: 1px solid rgb(220,220,220);
+      }
+
+      textarea {
+        width: 50vw;
+        border: 1px solid rgb(220,220,220);
+      }
+
   }
 }

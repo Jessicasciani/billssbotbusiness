@@ -1,0 +1,297 @@
+@media only screen and (max-width: 778px) {
+
+  .h1-home {
+    font-size: 100px;
+    line-height: 0.9em;
+    strong {
+      font-weight: 700;
+    }
+    font-weight: 300;
+  }
+
+  .first-screen {
+    width: 90vw;
+    margin: 10vh 5vw;
+  }
+    .h2-home {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-top: 3vh;
+    strong {
+      font-weight: 700;
+    }
+    font-weight: 300;
+  }
+  .visualfrontpage {
+    display: none;
+  }
+  .btn-purple {
+    width: 75vw;
+    display: block;
+    margin: 0 auto;
+  }
+  .card-home {
+    width: 75vw;
+    height: 50vh;
+  }
+  .partners {
+    display: none;
+  }
+  .img-carre-right {
+    position: relative;
+    width: 80vw;
+  }
+  .img-carre {
+    position: relative;
+    width: 80vw;
+    margin-left: auto;
+    display: block;
+  }
+ .petit-titre {
+    font-size: 1rem;
+  }
+  .gros-titre {
+    line-height: 1.3em;
+    font-size: 2rem;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    span {
+      color: $purple;
+    }
+    // text-align: center;
+  }
+
+
+  .btn-purple {
+    border: none;
+    margin-top: 5vh;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: $purple;
+    padding: 10px 15px;
+    color: white;
+    width: 80vw;
+    font-weight: bold;
+    p  {
+      margin: 0;
+    }
+    a {
+      margin-bottom: 3px;
+      display: block;
+      color:white;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .card-home {
+    width: 70vw;
+    height: 50vh;
+    object-fit: contain;
+  }
+
+  .cards {
+    margin: 5vh 0;
+  }
+  .contact-us {
+    padding-top: 15vh;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .form-home {
+    height: 50vh;
+    margin: 15vh 0;
+    margin-bottom: 50vh;
+    position: relative;
+  }
+  .mc-field-group {
+    input {
+      color: #383838 !important;
+      font-size: 12px !important;
+    }
+  }
+
+
+  #mc_embed_signup .button {
+    background-color: $purple !important;
+    margin: 0 0px 18px 0 !important;
+    font-size: 15px !important;
+    color: white;
+    &:hover {
+      background-color: $purple !important;
+    }
+  }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 779px) {
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-home {
+    display: flex;
+    align-items: center;
+    margin-left: 8vw;
+    height: 80vh;
+  }
+  .h1-home {
+  font-size: 10rem;
+  line-height: 0.9em;
+  strong {
+    font-weight: 700;
+  }
+  font-weight: 300;
+  }
+  .h2-home {
+    font-size: 1.6em;
+    font-weight: 300;
+    width: 38vw;
+    line-height: 1.3em;
+    margin-top: 3vh;
+    strong {
+      font-weight: 700;
+    }
+    font-weight: 300;
+  }
+  .partners {
+    margin: 15vh 0;
+  }
+  .img-carre {
+    width: 45vw;
+    position: absolute;
+    left: 10vw;
+  }
+  .img-carre-right {
+    width: 25vw;
+    // margin-right: 30vw;
+  }
+  .petit-titre {
+    width: 34vw;
+    font-size: 1.1rem;
+  }
+  .gros-titre {
+    line-height: 1.3em;
+    font-size: 2.8rem;
+    width: 35vw;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    span {
+      color: $purple;
+    }
+  }
+  .ml {
+    margin-left: 35vw;
+  }
+
+  .mr {
+    margin-right: 5vw;
+  }
+  .btn-purple {
+    border: none;
+    margin-top: 5vh;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: $purple;
+    padding: 10px 15px;
+    color: white;
+    width: 13vw;
+    font-weight: bold;
+    p  {
+      margin: 0;
+    }
+    a {
+      margin-bottom: 3px;
+      display: block;
+      color:white;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .card-home {
+    width: 25vw;
+    height: 50vh;
+    object-fit: contain;
+  }
+  .first-screen {
+    z-index: 45;
+    width: 60vw;
+  }
+
+  .cards {
+    margin: 10vh 0;
+  }
+  .contact-us {
+    padding-top: 15vh;
+    text-align: center;
+    width: 32vw;
+    margin-left: 14vw;
+  }
+
+
+  .form-box {
+    form {
+      padding: 35px 0px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      input {
+        width: 20vw;
+        border: 1px solid rgb(220,220,220);
+      }
+      textarea {
+        width: 20vw;
+        border: 1px solid rgb(220,220,220);
+      }
+    }
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(230,230,230);
+    position: absolute;
+    right: 14vw;
+    border-radius: 20px;
+    height: 52vh;
+    width: 30vw;
+    top: 50px;
+  }
+
+  .form-home {
+    height: 50vh;
+    margin: 15vh 0;
+    margin-bottom: 20vh;
+    position: relative;
+  }
+
+  .mc-field-group {
+    input {
+      color: #383838 !important;
+      font-size: 12px !important;
+      width: 10vw !important;
+    }
+  }
+
+
+  #mc_embed_signup .button {
+    background-color: $purple !important;
+    margin: 0 0px 18px 0 !important;
+    font-size: 15px !important;
+    color: white;
+    &:hover {
+      background-color: $purple !important;
+    }
+  }
+
+
+}

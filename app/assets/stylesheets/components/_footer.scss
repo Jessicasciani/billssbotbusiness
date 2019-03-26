@@ -1,12 +1,26 @@
-.footer {
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 159px;
-  padding: 0px 50px;
-  color: #433754;
+@media only screen and (max-width: 778px) {
+  .footer-landing {
+    background: white;
+    text-align: center;
+    padding: 10px 50px;
+    color: #404040;
+  }
 }
+
+@media only screen and (min-width: 779px) {
+  .footer-landing {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0px 50px;
+    color: #404040;
+  }
+}
+
+
+
 .footer-links {
   display: flex;
   align-items: center;
@@ -52,15 +66,6 @@
 
 // FOOTER FOR LANDING PAGE
 
-.footer-landing {
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
-  padding: 0px 50px;
-  color: #404040;
-}
 .footer-links {
   display: flex;
   align-items: center;
