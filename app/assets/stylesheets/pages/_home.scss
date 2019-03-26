@@ -28,6 +28,16 @@
   right: 0;
 }
 
+.card-home {
+  width: 25vw;
+  height: 50vh;
+  object-fit: contain;
+}
+
+.cards {
+  margin: 10vh 0;
+}
+
 .label-design {
   display: flex;
   flex-direction: column;
@@ -46,11 +56,12 @@
 
 
 #mc_embed_signup .button {
-  background-color: transparent !important;
-  margin: 0 0px 15px 0 !important;
-  font-size: 28px !important;
+  background-color: $purple !important;
+  margin: 0 0px 18px 0 !important;
+  font-size: 15px !important;
+  color: white;
   &:hover {
-    background-color: transparent !important;
+    background-color: $purple !important;
   }
 }
 
