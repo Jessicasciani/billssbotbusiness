@@ -1,5 +1,5 @@
 meta_product_name: "Billss"
 meta_title: "Billss - AI-powered robo-advisor for retail banks"
 meta_description: "Billss is a white label AI-powered robo-advisor for bill payment and spending analytics. We enable bill payment and aggregation, as well as spending analytics. The system is API-based and can be integrated across different geographies."
-meta_image: "visualfrontpage.png" # should exist in `app/assets/images/`
+meta_image: "ogimage.png" # should exist in `app/assets/images/`
 twitter_account: "@billssuk"   # required for Twitter Cards
