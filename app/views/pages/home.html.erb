@@ -67,6 +67,22 @@
     </div>
    -->
 
+    <h3 class="title-home">Download our PDF and get more information on how we can help you</h3>
+    <div class="flex-center">
+      <div class="form-down" id="div">
+        <%= simple_form_for(@download, html: {id: "form-download" }) do |f| %>
+          <%= f.error_notification %>
+          <div class="flex-form-download">
+            <%= f.input :email, placeholder: "Enter your email", label: false %>
+            <a class="download-btn" href="#" id="btn_null">Download</a>
+          </div>
+          <p id="paraf"></p>
+          <%= f.submit "Download", class: "btn-purple download-btn", style: "display:none;" %>
+        <% end %>
+      </div>
+      <%= link_to "test", asset_path("BillssSolution.pdf", skip_pipeline: true), id: "link-pdf", target: "_blank", style: "display:none;" %>
+    </div>
+
    <div class="partners">
     <h3 class="title-home">Our partners</h3>
     <div class="flex">
@@ -77,21 +93,7 @@
     </div>
   </div>
 
-  <h3 class="title-home">Download our PDF and get more information on how we can help you</h3>
-  <div class="flex-center">
-    <div class="form-down" id="div">
-      <%= simple_form_for(@download, html: {id: "form-download" }) do |f| %>
-        <%= f.error_notification %>
-        <div class="flex-form-download">
-          <%= f.input :email, placeholder: "Enter your email", label: false %>
-          <a class="download-btn" href="#" id="btn_null">Download</a>
-        </div>
-        <p id="paraf"></p>
-        <%= f.submit "Download", class: "btn-purple download-btn", style: "display:none;" %>
-      <% end %>
-    </div>
-    <%= link_to "test", asset_path("BillssSolution.pdf", skip_pipeline: true), id: "link-pdf", target: "_blank", style: "display:none;" %>
-  </div>
+
 
 </div>
 
