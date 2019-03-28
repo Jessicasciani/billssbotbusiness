@@ -1,5 +1,10 @@
 @media only screen and (max-width: 778px) {
 
+  #download_email {
+    width: 50vw !important;
+    height: 50px;
+  }
+
   .h1-home {
     font-size: 100px;
     line-height: 0.9em;
@@ -274,6 +279,12 @@
     margin-bottom: 20vh;
     position: relative;
   }
+
+  #download_email {
+    width: 35vw !important;
+    height: 50px;
+  }
+
 
   .mc-field-group {
     input {

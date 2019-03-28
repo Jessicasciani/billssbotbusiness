@@ -66,6 +66,7 @@
       <%= image_tag "chartbar.png", class: "img-bot" %>
     </div>
    -->
+
    <div class="partners">
     <h3 class="title-home">Our partners</h3>
     <div class="flex">
@@ -75,6 +76,23 @@
       <%= image_tag "mashreq.png", class: "logo-home" %>
     </div>
   </div>
+
+  <h3 class="title-home">Download our PDF and get more information on how we can help you</h3>
+  <div class="flex-center">
+    <div class="form-down" id="div">
+      <%= simple_form_for(@download, html: {id: "form-download" }) do |f| %>
+        <%= f.error_notification %>
+        <div class="flex-form-download">
+          <%= f.input :email, placeholder: "Enter your email", label: false %>
+          <a class="download-btn" href="#" id="btn_null">Download</a>
+        </div>
+        <p id="paraf"></p>
+        <%= f.submit "Download", class: "btn-purple download-btn", style: "display:none;" %>
+      <% end %>
+    </div>
+    <%= link_to "test", asset_path("BillssSolution.pdf", skip_pipeline: true), id: "link-pdf", target: "_blank", style: "display:none;" %>
+  </div>
+
 </div>
 
   <div class="form-home" style="background-image: url(<%= image_path "background-purple.jpg" %>);">
@@ -154,11 +172,41 @@
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
+</script>
+
+<script>
+  form = document.getElementById("form-download");
+  link = document.getElementById("link-pdf");
+  input = document.getElementById("download_email");
+  p = document.getElementById("paraf");
+  btn = document.querySelector(".download-btn");
+  btnNull = document.getElementById("btn_null");
+
+  // form.addEventListener("submit", event => {
+  //   if(input.value === "" || !input.value.includes('@')) {
+  //     event.preventDefault();
+  //     p.insertAdjacentHTML("beforeEnd", "Please enter a valid email address");
+  //   } else {
+  //     link.click();
+  //   }
+  // });
+
+  btnNull.addEventListener("click", event => {
+    event.preventDefault();
+    if(input.value === "" || !input.value.includes('@')) {
+      p.innerHTML = ""
+      p.insertAdjacentHTML("beforeEnd", "Please enter a valid email address");
+    } else {
+      form.submit();
+      link.click();
+    }
+  });
+
+
 </script>
 

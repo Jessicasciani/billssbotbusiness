@@ -82,8 +82,6 @@
   text-align: center;
 }
 
-
-
 .arrow {
   text-align: center;
   .fa {
@@ -125,6 +123,52 @@ a {
   }
 }
 
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-download  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-form-download {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 0 !important;
+}
+
+#paraf {
+  font-size: 14px;
+  color: #ca2c2c;
+}
+
+.download-btn  {
+  display: block;
+  margin: auto;
+  border: none;
+  height: 50px;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: #6112FE;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    color: white;
+  }
+}
+
+.partners {
+  height: 30vh;
+}
 
 @media only screen and (max-width: 778px) {
 
